@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+    {% for post in posts%}
+    <h1>{{ post.character }}</h1>
+    <p>Power is {{ post.power }}</p>
+    <p>Weapon is {{ post.weapon }}</p>
+    <p>{{ post.description }}</p>
+    {% endfor %}
+{% endblock content %}
